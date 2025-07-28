@@ -14,7 +14,7 @@
   background-image: var(--bg-img, #fff);
 }
 
-.theme-light .decorated-element  {
+.theme-light .decorated-element {
   display: none;
 }
 

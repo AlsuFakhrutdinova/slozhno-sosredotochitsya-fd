@@ -49,7 +49,6 @@
 .decorated-element {
   display: inline-block;
   content: "";
-  display: inline-block;
   inline-size: 9px;
   block-size: 9px;
   background-color: var(--decorated-elements-color, #FF0070);
@@ -57,7 +56,7 @@
   position: absolute;
   inset-block-start: 18px;
   inset-inline-end: 19px;
-  box-shadow: 0 0 4px 2px var(--decorated-elements-color, #FF0070);  
+  box-shadow: 0 0 4px 2px var(--decorated-elements-color, #FF0070);
 }
 
 .decorated-element::before {
@@ -154,7 +153,7 @@
   display: grid;
   gap: 20px;
   padding-inline-start: var(--page-padding, 10px);
-  padding-inline-end: var(--page-padding, 10px);  
+  padding-inline-end: var(--page-padding, 10px);
 }
 
 .section:not(:last-child) {
@@ -212,7 +211,7 @@ article:not(:last-child) .text {
 }
 
 .footer {
-  margin-block-start: 2.222em;;
+  margin-block-start: 2.222em;
   justify-content: center;
   align-items: center;
 }
@@ -265,7 +264,7 @@ article:not(:last-child) .text {
 
   .section {
     padding-inline-start: var(--page-padding, 20px);
-    padding-inline-end: var(--page-padding, 20px);  
+    padding-inline-end: var(--page-padding, 20px);
   }
 
   .section:not(:last-child) {
@@ -322,7 +321,7 @@ article:not(:last-child) .text {
   }
 
   .footer {
-    margin-block-start: 3.333em;;
+    margin-block-start: 3.333em;
   }
 }
 
@@ -358,9 +357,9 @@ article:not(:last-child) .text {
 
   .section {
     padding-inline-start: var(--page-padding, 20px);
-    padding-inline-end: var(--page-padding, 20px); 
+    padding-inline-end: var(--page-padding, 20px);
     box-shadow: var(--section-shadow, none);
-    background-color: var(--section-bg-color, #fff);
+    background-color: var(--section-bg-color, transparent);
   }
 
   .reducing-focus-section__description {
@@ -378,8 +377,8 @@ article:not(:last-child) .text {
   }
 
    .footer {
-    margin-block-start: 3.333em;;
-  } 
+    margin-block-start: 3.333em;
+  }
 }
 
 
