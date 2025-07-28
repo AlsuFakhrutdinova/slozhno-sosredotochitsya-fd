@@ -1,4 +1,18 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+
+:root {
+  /* Переменные тёмной темы */
+  --bg-img: url(../images/cover-image-dark.png);
+  --section-bg-color: transparent;
+  --accent-color: #FF0070;
+  --nav-heading-color: #FF0070;
+  --decorated-elements-color: #FF0070;
+  --main-heading-color: #DB00FF;
+  --subtitle-color: #000028;
+  --text-color: #F1B2CE;
+  --main-font: 'IBM Plex mono';
+  --main-font-size: 18px;
+  --title-clamp-small: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --title-clamp-large: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --page-padding: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+  --section-shadow: none;
+}

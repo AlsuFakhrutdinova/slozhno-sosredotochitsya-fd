@@ -1,12 +1,110 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --bg-img: url(../images/cover-image-light.png);
+  --accent-color: #FF8DCB;
+  --nav-heading-color: #353430;
+  --decorated-elements-color: #353430;
+  --main-heading-color: #FFC2E6;
+  --subtitle-color: #353430;
+  --text-color: #353430;
+  --section-bg-color: #fff;
+  --section-shadow:  0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.theme-light .page {
+  background-image: var(--bg-img, #fff);
+}
+
+.theme-light .decorated-element  {
+  display: none;
+}
+
+.theme-light .decorated-element::before {
+  display: none;
+}
+
+.theme-light .header__theme-menu-button:hover {
+  border-color: rgba(50, 49, 45, 0.4);
+}
+
+.theme-light .header__theme-menu-list {
+ color: var(--nav-heading-color,#353430);
+}
+
+.theme-light .decorated-zone::before {
+  border-block-start-color: var(--decorated-elements-color,#353430);
+  border-inline-end-color: var(--decorated-elements-color,#353430);
+}
+
+.theme-light .decorated-zone::after {
+  border-block-end-color: var(--decorated-elements-color,#353430);
+  border-inline-start-color: var(--decorated-elements-color,#353430);
+}
+
+.theme-light .heading {
+  color: var(--nav-heading-color, #353430);
+}
+
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-img: url(../images/cover-image-light.png);
+    --accent-color: #FF8DCB;
+    --nav-heading-color: #353430;
+    --decorated-elements-color: #353430;
+    --main-heading-color: #FFC2E6;
+    --subtitle-color: #353430;
+    --text-color: #353430;
+    --section-bg-color: #fff;
+  --section-shadow:  0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .page {
+    background-image: var(--bg-img, #fff);
+  }
+
+  .decorated-zone::before {
+    border-block-start-color: var(--decorated-elements-color,#353430);
+    border-inline-end-color: var(--decorated-elements-color,#353430);
+  }
+
+  .decorated-zone::after {
+    border-block-end-color: var(--decorated-elements-color,#353430);
+    border-inline-start-color: var(--decorated-elements-color,#353430);
+  }
+  
+  .decorated-element {
+    display: none;
+  }
+
+  .decorated-element::before {
+    display: none;
+  }
+
+  .header__theme-menu-button:hover {
+    border-color: rgba(50, 49, 45, 0.4);
+  }
+
+  .header__theme-menu-list {
+    color: var(--nav-heading-color,#353430);
+  } 
+
+  .heading {
+    color: var(--nav-heading-color, #353430);
+  }
+}
+
+
+@media (width >= 1024px) {
+  .section {
+    box-shadow: var(--section-shadow);
+    background-color: var(--section-bg-color, #fff);
+  }
+}
+
+@media (width >= 1024px) and (prefers-color-scheme: light) {
+  .section {
+    box-shadow: var(--section-shadow);
+    background-color: var(--section-bg-color, #fff);
+  }
 }
