@@ -1,14 +1,15 @@
 
 :root.theme-dark {
-   --bg-img: url(../images/cover-image-dark.png);
-  --section-bg-color: transparent;
+  --bg-img: url(../images/cover-image-dark.png);
+  --main-bg-color: #000028;
   --accent-color: #FF0070;
-  --nav-heading-color: #FF0070;
+  --nav-color: #FF0070;
+  --nav-hover-color: rgba(255, 0, 112, 0.4);
+  --section-title-color: #FF0070;
   --decorated-elements-color: #FF0070;
   --main-heading-color: #DB00FF;
-  --subtitle-color: #000028;
+  --main-subtitle-color: #000028;
   --text-color: #F1B2CE;
-  --section-shadow: none;
 }
 
 .theme-dark .decorated-element {
