@@ -1,5 +1,5 @@
 .page {
-  background-image: var(--bg-img, #000028);
+  background-image: var(--bg-img, url(../images/cover-image-dark.png));
   background-color: var(--main-bg-color, #000028);
   background-repeat: no-repeat;
   background-size: cover;
@@ -233,6 +233,7 @@ article:not(:last-child) .text {
 
   .header {
     margin-block-end: 3.333em;
+    padding-inline-start: 0;
   }
 
   .header__title {
@@ -242,6 +243,7 @@ article:not(:last-child) .text {
   .header__description {
     justify-self: end;
     max-inline-size: 50%;
+    padding-inline-start: 10px;
   }
 
   .decorated-zone::before {
@@ -275,7 +277,7 @@ article:not(:last-child) .text {
 
   .reasons-section,
   .section-advice {
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 236px 1fr; 
   }
 
   .reducing-focus-section__title {
@@ -333,6 +335,7 @@ article:not(:last-child) .text {
 
   .header {
     margin-block-end: 3.333em;
+    padding-inline-start: 0;
   }
 
   .header__title,
@@ -340,13 +343,10 @@ article:not(:last-child) .text {
     font-size: var(--title-clamp-large);
   }
 
-  .header__description {
-    max-inline-size: 491px;
-  }
-
   .header__theme-menu {
     justify-self: center;
     align-self: start;
+    padding-inline-start: 20px;
   }
 
   .header__theme-menu-list {
@@ -356,6 +356,11 @@ article:not(:last-child) .text {
   .section {
     padding-inline-start: var(--page-padding, 20px);
     padding-inline-end: var(--page-padding, 20px);
+  }
+
+  .reasons-section,
+  .section-advice {
+    grid-template-columns: 315px 1fr; 
   }
 
   .reducing-focus-section__description {
