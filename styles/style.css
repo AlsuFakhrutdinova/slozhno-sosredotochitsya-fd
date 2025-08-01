@@ -277,7 +277,7 @@ article:not(:last-child) .text {
 
   .reasons-section,
   .section-advice {
-    grid-template-columns: 236px 1fr; 
+    grid-template-columns: 236px 1fr;
   }
 
   .reducing-focus-section__title {
@@ -360,7 +360,7 @@ article:not(:last-child) .text {
 
   .reasons-section,
   .section-advice {
-    grid-template-columns: 315px 1fr; 
+    grid-template-columns: 315px 1fr;
   }
 
   .reducing-focus-section__description {
@@ -381,5 +381,3 @@ article:not(:last-child) .text {
     margin-block-start: 3.333em;
   }
 }
-
-
